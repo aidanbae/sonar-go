@@ -1,0 +1,61 @@
+{
+	"issues": [
+		{
+			"engineId": "gosec",
+			"ruleId": "G501",
+			"cwe": {
+				"ID": "327",
+				"URL": "https://cwe.mitre.org/data/definitions/327.html"
+			},
+			"primaryLocation": {
+				"message": "Blocklisted import crypto/md5: weak cryptographic primitive",
+				"filePath": "main.go",
+				"textRange": {
+					"startLine": 4,
+					"endLine": 4
+				}
+			},
+			"type": "VULNERABILITY",
+			"severity": "MAJOR",
+			"effortMinutes": 5
+		},
+		{
+			"engineId": "gosec",
+			"ruleId": "G401",
+			"cwe": {
+				"ID": "326",
+				"URL": "https://cwe.mitre.org/data/definitions/326.html"
+			},
+			"primaryLocation": {
+				"message": "Use of weak cryptographic primitive",
+				"filePath": "main.go",
+				"textRange": {
+					"startLine": 31,
+					"endLine": 31
+				}
+			},
+			"type": "VULNERABILITY",
+			"severity": "MAJOR",
+			"effortMinutes": 5
+		},
+		{
+			"engineId": "gosec",
+			"ruleId": "G104",
+			"cwe": {
+				"ID": "703",
+				"URL": "https://cwe.mitre.org/data/definitions/703.html"
+			},
+			"primaryLocation": {
+				"message": "Errors unhandled.",
+				"filePath": "main.go",
+				"textRange": {
+					"startLine": 27,
+					"endLine": 27
+				}
+			},
+			"type": "VULNERABILITY",
+			"severity": "MINOR",
+			"effortMinutes": 5
+		}
+	]
+}
